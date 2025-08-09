@@ -1,0 +1,53 @@
+{
+  "core-standards": [
+    "core-workflow",
+    "coding-standards",
+    "documentation-standards",
+    "decision-records",
+    "typescript-policy"
+  ],
+  "general-policies": {
+    "testing": [
+      "core-standards",
+      "e2e-playwright",
+      "implementation-guide",
+      "playwright-first"
+    ],
+    "frontend": [
+      "web-development",
+      "typescript",
+      "typescript-strict"
+    ],
+    "backend": [
+      "api-design",
+      "database-schema",
+      "security"
+    ],
+    "ops": [
+      "deployment",
+      "code-review",
+      "performance",
+      "git-workflow",
+      "observability",
+      "idempotency",
+      "continuous-work-loop"
+    ]
+  },
+  "current-code": {
+    "overview": ["overview"],
+    "frontend": ["react-patterns"],
+    "backend": ["fastapi", "database", "security"],
+    "ops": ["deployment", "performance", "code-review"],
+    "testing": ["clarosfarm-tests"]
+  }
+  ,
+  "visual": [
+    "workflow-architecture"
+  ],
+  "_mandatory": [
+    "00-circuit-breaker",
+    "01-plan-template",
+    "02-approval-gate",
+    "03-plan-content-preview"
+  ]
+}
