@@ -1,5 +1,16 @@
 # 🚀 Sahin AI Rules - The Ultimate AI Assistant Development Framework
 
+## 🌐 Connect with Sahin
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sahinboydas-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sahinboydas)
+[![Twitter](https://img.shields.io/badge/Twitter-@sahin-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/sahin)
+
+</div>
+
+---
+
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-2.0-blue)
