@@ -1,13 +1,13 @@
-# 🚀 Sahin AI Rules - The Ultimate AI Coding Assistant Framework
+# 🚀 Sahin Claude Code Rules - The Ultimate Claude Code Framework
 
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-3.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Compliance](https://img.shields.io/badge/compliance-100%25-green)
-![Framework](https://img.shields.io/badge/framework-Claude_Compatible-purple)
+![Framework](https://img.shields.io/badge/framework-Claude_Code-purple)
 
-**Transform your AI coding assistant (Claude Code, Cursor, etc.) from a helpful tool into a disciplined, systematic, and highly efficient development partner**
+**Transform Claude Code from a helpful tool into a disciplined, systematic, and highly efficient development partner**
 
 [Quick Start](#-quick-start) • [12 Core Rules](#-the-12-core-rules) • [Visual Workflow](#-visual-workflow-architecture) • [Implementation](#-implementation-guide) • [Connect](#-connect-with-sahin)
 
@@ -45,9 +45,9 @@
 
 ## Page 1: Introduction & Why This Framework
 
-### 🎯 The Problem with Traditional AI Coding Assistants
+### 🎯 The Problem with Unstructured Claude Code Usage
 
-Traditional AI coding assistants suffer from critical flaws:
+Using Claude Code without proper rules leads to:
 
 - ❌ **Immediate Coding**: Starts writing code without understanding requirements
 - ❌ **Context Loss**: Forgets project patterns and conventions mid-task  
@@ -57,7 +57,7 @@ Traditional AI coding assistants suffer from critical flaws:
 
 ### ✅ The Sahin AI Rules Solution
 
-This framework transforms AI coding assistants (especially Claude Code) through:
+This framework optimizes Claude Code through:
 
 - ✅ **Plan-First Coding**: Every feature starts with structured planning
 - ✅ **Project-Aware Context**: Loads relevant coding standards dynamically
@@ -98,7 +98,7 @@ mkdir -p /your/project/.claude/hooks
 cp .claude/hooks/* /your/project/.claude/hooks/ 2>/dev/null || true
 chmod +x /your/project/.claude/hooks/*.sh
 
-# 4. Verify Setup for Your AI Coding Assistant
+# 4. Verify Setup for Claude Code
 cat /your/project/.claude/rules/manifest.json | jq '.rules | keys'
 ```
 
@@ -772,7 +772,7 @@ Track these KPIs weekly:
 
 ## 🌟 Start Your Transformation Today
 
-**Join hundreds of developers who have revolutionized their AI coding assistants (Claude Code, Cursor, etc.)**
+**Join hundreds of developers who have revolutionized their Claude Code workflow**
 
 ```bash
 git clone https://github.com/yourusername/sahin-ai-rules.git
@@ -787,6 +787,6 @@ cd sahin-ai-rules && ./install.sh
 
 © 2024 Sahin AI Rules Framework | MIT License
 
-*Making AI coding assistants work the way they should - systematically, efficiently, and reliably*
+*Making Claude Code work the way it should - systematically, efficiently, and reliably*
 
 </div>
