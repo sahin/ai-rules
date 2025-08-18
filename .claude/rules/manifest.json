@@ -1,0 +1,282 @@
+{
+  "rules": {
+    "core-workflow": {
+      "summary": "Plan approval, testing requirements, development flow",
+      "size": 250,
+      "file": "core-standards/core-workflow.md",
+      "triggers": ["plan", "workflow", "approval", "test"],
+      "dependencies": [],
+      "priority": "critical",
+      "always_load_summary": true
+    },
+    "coding-core": {
+      "summary": "Essential coding standards, naming, file organization",
+      "size": 450,
+      "file": "core-standards/coding-core.md",
+      "triggers": ["code", "coding", "standards", "quality"],
+      "dependencies": [],
+      "priority": "high",
+      "always_load_summary": true
+    },
+    "typescript-standards": {
+      "summary": "TypeScript type safety, annotations, strict mode",
+      "size": 400,
+      "file": "core-standards/typescript-standards.md",
+      "triggers": ["typescript", "type", "ts", "typing"],
+      "dependencies": [],
+      "priority": "high",
+      "always_load_summary": false
+    },
+    "error-handling": {
+      "summary": "Error handling patterns, logging, user communication",
+      "size": 450,
+      "file": "core-standards/error-handling.md",
+      "triggers": ["error", "exception", "try", "catch", "handling"],
+      "dependencies": [],
+      "priority": "medium",
+      "always_load_summary": false
+    },
+    "documentation-standards": {
+      "summary": "Documentation requirements, file placement, changelog",
+      "size": 683,
+      "file": "core-standards/documentation-standards.md",
+      "triggers": ["docs", "documentation", "changelog"],
+      "dependencies": [],
+      "priority": "medium",
+      "always_load_summary": true
+    },
+    "adr-principles": {
+      "summary": "Architecture Decision Records principles and when to use",
+      "size": 250,
+      "file": "core-standards/adr-principles.md",
+      "triggers": ["adr", "architecture", "decision", "record"],
+      "dependencies": [],
+      "priority": "low",
+      "always_load_summary": false
+    },
+    "adr-template": {
+      "summary": "ADR template for documenting architecture decisions",
+      "size": 300,
+      "file": "core-standards/adr-template.md",
+      "triggers": ["adr", "template", "architecture"],
+      "dependencies": ["adr-principles"],
+      "priority": "low",
+      "always_load_summary": false
+    },
+    "api-design": {
+      "summary": "REST standards, endpoint naming, response formats, 100% test coverage",
+      "size": 2500,
+      "file": "general-policies/backend/api-design.md",
+      "triggers": ["API", "endpoint", "REST", "route", "backend"],
+      "dependencies": ["core-workflow", "testing-implementation"],
+      "priority": "high"
+    },
+    "database-schema": {
+      "summary": "Database patterns, migrations, indexing, relationships",
+      "size": 1800,
+      "file": "general-policies/backend/database-schema.md",
+      "triggers": ["database", "DB", "SQL", "schema", "migration"],
+      "dependencies": [],
+      "priority": "medium"
+    },
+    "web-development": {
+      "summary": "React patterns, component design, state management",
+      "size": 2200,
+      "file": "general-policies/frontend/web-development.md",
+      "triggers": ["component", "React", "frontend", "UI", "UX", "style"],
+      "dependencies": ["coding-standards"],
+      "priority": "high"
+    },
+    "testing-core": {
+      "summary": "Testing standards index and quick reference",
+      "size": 450,
+      "file": "general-policies/testing/core-standards.md",
+      "triggers": ["test", "testing", "standards"],
+      "dependencies": [],
+      "priority": "high"
+    },
+    "test-requirements": {
+      "summary": "Coverage requirements, testing pyramid, quality standards",
+      "size": 400,
+      "file": "general-policies/testing/test-requirements.md",
+      "triggers": ["coverage", "requirements", "pyramid"],
+      "dependencies": [],
+      "priority": "critical"
+    },
+    "test-patterns": {
+      "summary": "AAA pattern, naming conventions, test organization",
+      "size": 350,
+      "file": "general-policies/testing/test-patterns.md",
+      "triggers": ["AAA", "pattern", "naming"],
+      "dependencies": [],
+      "priority": "high"
+    },
+    "test-automation": {
+      "summary": "CI/CD pipeline, smart detection, test caching",
+      "size": 350,
+      "file": "general-policies/testing/test-automation.md",
+      "triggers": ["CI", "automation", "pipeline"],
+      "dependencies": [],
+      "priority": "medium"
+    },
+    "testing-implementation": {
+      "summary": "Implementation guide index for test patterns",
+      "size": 450,
+      "file": "general-policies/testing/implementation-guide.md",
+      "triggers": ["implementation", "guide"],
+      "dependencies": [],
+      "priority": "medium"
+    },
+    "api-testing": {
+      "summary": "API test patterns, 100% coverage requirement, auth testing",
+      "size": 400,
+      "file": "general-policies/testing/api-testing.md",
+      "triggers": ["API", "endpoint", "REST", "test"],
+      "dependencies": ["test-requirements"],
+      "priority": "critical"
+    },
+    "unit-testing": {
+      "summary": "Component testing, mocking strategies, test utilities",
+      "size": 350,
+      "file": "general-policies/testing/unit-testing.md",
+      "triggers": ["unit", "mock", "component", "jest"],
+      "dependencies": [],
+      "priority": "high"
+    },
+    "integration-testing": {
+      "summary": "Database testing, service integration, data management",
+      "size": 350,
+      "file": "general-policies/testing/integration-testing.md",
+      "triggers": ["integration", "database", "service"],
+      "dependencies": [],
+      "priority": "medium"
+    },
+    "playwright-strategy": {
+      "summary": "Playwright-first testing philosophy and approach",
+      "size": 350,
+      "file": "general-policies/testing/playwright-strategy.md",
+      "triggers": ["playwright", "e2e", "end-to-end", "user test"],
+      "dependencies": [],
+      "priority": "high"
+    },
+    "playwright-patterns": {
+      "summary": "Playwright testing patterns, selectors, data management",
+      "size": 400,
+      "file": "general-policies/testing/playwright-patterns.md",
+      "triggers": ["playwright", "selector", "test pattern"],
+      "dependencies": ["playwright-strategy"],
+      "priority": "medium"
+    },
+    "smart-testing": {
+      "summary": "Automated test detection, smart test execution",
+      "size": 900,
+      "file": "testing/smart-testing.md",
+      "triggers": ["smart", "test", "automated"],
+      "dependencies": ["testing-core"],
+      "priority": "medium"
+    },
+    "security": {
+      "summary": "Security best practices, authentication, authorization",
+      "size": 2100,
+      "file": "general-policies/backend/security.md",
+      "triggers": ["auth", "security", "JWT", "permission", "login"],
+      "dependencies": [],
+      "priority": "critical"
+    },
+    "deployment": {
+      "summary": "CI/CD, deployment strategies, production readiness",
+      "size": 1600,
+      "file": "general-policies/ops/deployment.md",
+      "triggers": ["deploy", "CI/CD", "production", "release"],
+      "dependencies": ["testing-core"],
+      "priority": "medium"
+    },
+    "root-hygiene": {
+      "summary": "Keep root folder clean, organize files by purpose",
+      "size": 200,
+      "file": "general-policies/ops/root-hygiene.md",
+      "triggers": ["root", "folder", "directory", "organization", "structure", "hygiene"],
+      "dependencies": [],
+      "priority": "medium"
+    },
+    "session-file-tracking": {
+      "summary": "Track and commit only YOUR session files, never use git add -A",
+      "size": 500,
+      "file": "general-policies/ops/session-file-tracking.md",
+      "triggers": ["git", "commit", "add", "stage", "session"],
+      "dependencies": ["git-workflow"],
+      "priority": "critical",
+      "always_load_summary": true
+    },
+    "refactoring": {
+      "summary": "Refactoring patterns, technical debt management",
+      "size": 1200,
+      "file": "general-policies/refactoring.md",
+      "triggers": ["refactor", "technical debt", "code smell"],
+      "dependencies": ["coding-standards"],
+      "priority": "low"
+    },
+    "database-migration-safety": {
+      "summary": "Database migration safety patterns, rollback procedures, multi-tenant isolation",
+      "size": 2800,
+      "file": "general-policies/backend/database-migration-safety.md",
+      "triggers": ["migration", "database", "rollback", "schema"],
+      "dependencies": ["database-schema"],
+      "priority": "critical"
+    },
+    "mobile-first-responsive": {
+      "summary": "Mobile-first responsive design, touch-friendly interfaces, greenhouse optimization",
+      "size": 3200,
+      "file": "general-policies/frontend/mobile-first-responsive.md",
+      "triggers": ["mobile", "responsive", "touch", "tablet", "greenhouse"],
+      "dependencies": ["web-development"],
+      "priority": "high"
+    },
+    "api-versioning-strategy": {
+      "summary": "Clean URL versioning, header-based negotiation, backward compatibility",
+      "size": 2900,
+      "file": "general-policies/backend/api-versioning-strategy.md",
+      "triggers": ["version", "API", "compatibility", "migration"],
+      "dependencies": ["api-design"],
+      "priority": "high"
+    },
+    "cross-farm-data-isolation": {
+      "summary": "Multi-tenant data isolation testing, RLS enforcement, farm boundary validation",
+      "size": 3500,
+      "file": "general-policies/testing/cross-farm-data-isolation.md",
+      "triggers": ["isolation", "multi-tenant", "farm", "security", "RLS"],
+      "dependencies": ["testing-core", "security"],
+      "priority": "critical"
+    }
+  },
+  "metadata": {
+    "version": "2.1.0",
+    "last_updated": "2025-08-15",
+    "total_rules": 29,
+    "total_tokens_full": 24400,
+    "total_tokens_summaries": 2200,
+    "agent_integrations": {
+      "backend-developer": {
+        "enhanced": true,
+        "coverage_enforcement": "100%",
+        "related_rules": ["api-design", "database-migration-safety", "api-versioning-strategy"]
+      },
+      "testing-orchestrator": {
+        "consolidates": ["testing-core", "api-testing", "cross-farm-data-isolation"],
+        "automation_level": "high",
+        "coverage_requirements": "mandatory"
+      },
+      "visual-regression-tester": {
+        "enhanced": true,
+        "lost_pixel_integration": true,
+        "mobile_testing": true
+      }
+    },
+    "automation_levels": {
+      "critical_hooks": ["pre-migration.sh", "session-start.sh", "feature-complete.sh"],
+      "smart_testing": "enabled",
+      "coverage_enforcement": "automated",
+      "migration_safety": "automated"
+    }
+  }
+}

@@ -1,8 +1,10 @@
 {
   "permissions": {
+    "additionalDirectories": [
+      "/Users/s/Code"
+    ],
     "allow": [
       "Bash(git add:*)"
-    ],
-    "deny": []
+    ]
   }
 }
