@@ -85,8 +85,8 @@ This framework optimizes Claude Code through:
 
 ```bash
 # 1. Clone the Repository
-git clone https://github.com/yourusername/sahin-claude-code-rules.git
-cd sahin-claude-code-rules
+git clone https://github.com/sahin/ai-rules.git
+cd ai-rules
 
 # 2. Copy to Your Project (Works with Claude Code, Cursor, etc.)
 cp -r .claude/rules /your/project/.claude/rules/
@@ -762,9 +762,9 @@ Track these KPIs weekly:
 
 - 📖 [Documentation](./.claude/docs/INDEX.md) - Complete framework guide
 - 🤖 [Claude Code Docs](https://docs.anthropic.com/en/docs/claude-code) - Official Claude Code documentation
-- 🐛 [Report Issues](https://github.com/yourusername/sahin-claude-code-rules/issues)
-- 💬 [Discussions](https://github.com/yourusername/sahin-claude-code-rules/discussions)
-- 📧 [Contact](mailto:support@sahin-ai-rules.dev)
+- 🐛 [Report Issues](https://github.com/sahin/ai-rules/issues)
+- 💬 [Discussions](https://github.com/sahin/ai-rules/discussions)
+- 📧 [Contact](mailto:support@ai-rules.dev)
 
 ---
 
@@ -775,8 +775,8 @@ Track these KPIs weekly:
 **Join hundreds of developers who have revolutionized their Claude Code workflow**
 
 ```bash
-git clone https://github.com/yourusername/sahin-claude-code-rules.git
-cd sahin-claude-code-rules && ./install.sh
+git clone https://github.com/sahin/ai-rules.git
+cd ai-rules && ./install.sh
 ```
 
 **⭐ Star this repo** • **🔄 Fork it** • **📢 Share it**
