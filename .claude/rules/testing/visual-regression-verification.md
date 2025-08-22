@@ -206,8 +206,14 @@ When visual regression tests detect differences > 1%, the system **AUTOMATICALLY
 
 ### **URL FORMAT**
 ```
-http://localhost:9323/#?testId=b0d67a64cf44dd8a563c-0f5ecabede19038e6584
+http://playwright.main.clarosfarm.localhost/#?testId=b0d67a64cf44dd8a563c-0f5ecabede19038e6584
 ```
+
+**Smart Port System Integration:**
+- URLs automatically use worktree-based subdomains: `playwright.{worktree}.clarosfarm.localhost`
+- Ports are deterministically calculated using the same algorithm as the smart port system
+- For worktree `main`: Port `8223`, URL: `http://playwright.main.clarosfarm.localhost`
+- For worktree `feature-auth`: Port `8052`, URL: `http://playwright.feature-auth.clarosfarm.localhost`
 
 ### **AUTOMATIC OPENING TRIGGERS**
 
@@ -239,10 +245,10 @@ npm run visual:compare
 # Disable auto-opening
 export PLAYWRIGHT_AUTO_OPEN=false
 
-# Custom port
+# Override smart port (otherwise auto-calculated)
 export PLAYWRIGHT_REPORT_PORT=9324
 
-# Custom base URL
+# Override smart URL (otherwise auto-generated)
 export PLAYWRIGHT_REPORT_URL=http://custom-host:9323
 ```
 
