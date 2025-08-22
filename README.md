@@ -2,14 +2,14 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-3.0-blue)
+![Version](https://img.shields.io/badge/version-3.1-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Compliance](https://img.shields.io/badge/compliance-100%25-green)
 ![Framework](https://img.shields.io/badge/framework-Claude_Code-purple)
 
 **Transform Claude Code from a helpful tool into a disciplined, systematic, and highly efficient development partner**
 
-[Quick Start](#-quick-start) • [12 Core Rules](#-the-12-core-rules) • [Visual Workflow](#-visual-workflow-architecture) • [Implementation](#-implementation-guide) • [Connect](#-connect-with-sahin)
+[Quick Start](#-quick-start) • [12 Core Rules](#-the-12-core-rules) • [Agent Framework](#-agent-framework) • [Visual Workflow](#-visual-workflow-architecture) • [Implementation](#-implementation-guide) • [Connect](#-connect-with-sahin)
 
 </div>
 
@@ -34,12 +34,13 @@
 **Page 4:** [Visual Workflow Architecture](#page-4-visual-workflow-architecture)  
 **Page 5:** [High-ROI Development Strategy](#page-5-high-roi-development-strategy)  
 **Page 6:** [Testing-First Methodology](#page-6-testing-first-methodology)  
-**Page 7:** [Automation & Hooks](#page-7-automation--hooks)  
-**Page 8:** [Dynamic Rule Loading](#page-8-dynamic-rule-loading)  
-**Page 9:** [Context Management](#page-9-context-management)  
-**Page 10:** [Quality Gates & Compliance](#page-10-quality-gates--compliance)  
-**Page 11:** [Performance & Metrics](#page-11-performance--metrics)  
-**Page 12:** [Implementation Guide](#page-12-implementation-guide)  
+**Page 7:** [Agent Framework](#page-7-agent-framework)  
+**Page 8:** [Automation & Hooks](#page-8-automation--hooks)  
+**Page 9:** [Dynamic Rule Loading](#page-9-dynamic-rule-loading)  
+**Page 10:** [Context Management](#page-10-context-management)  
+**Page 11:** [Quality Gates & Compliance](#page-11-quality-gates--compliance)  
+**Page 12:** [Performance & Metrics](#page-12-performance--metrics)  
+**Page 13:** [Implementation Guide](#page-13-implementation-guide)  
 
 ---
 
@@ -65,6 +66,7 @@ This framework optimizes Claude Code through:
 - ✅ **Test-Driven Development**: Write tests before implementation
 - ✅ **Task Management**: TodoWrite tool tracks every coding task
 - ✅ **Automated Workflows**: Git hooks, test runners, and commit automation
+- ✅ **Specialized Agents**: AI agents for complex testing and analysis tasks
 
 ### 📊 Proven Results
 
@@ -73,6 +75,7 @@ This framework optimizes Claude Code through:
 | **Code Planning** | 5% | 20% | Better architecture |
 | **Lines per Feature** | 200 | 50 | 75% less code |
 | **Test Coverage** | 40% | 95% | Full user flow testing |
+| **Visual Regression** | Manual | Automated | 100% coverage |
 | **Production Bugs** | 12/week | 2/week | 83% reduction |
 | **Code Reuse** | 20% | 80% | 4x improvement |
 | **Development Speed** | Baseline | 2.5x | 150% faster |
@@ -116,7 +119,8 @@ your-project/
 │   │   │   ├── frontend/            # React, Vue, Angular patterns
 │   │   │   ├── testing/             # Jest, Playwright, Pytest
 │   │   │   └── ops/                 # Docker, CI/CD, deployment
-│   │   ├── testing/                 # TDD automation rules
+│   │   ├── agents/                  # Specialized AI agents
+│   │   ├── testing/                 # Comprehensive testing rules
 │   │   └── manifest.json            # Dynamic loading config
 │   ├── docs/                        # Framework documentation
 │   ├── hooks/                       # Claude Code automation
@@ -387,7 +391,93 @@ Results: ✅ All tests passed
 
 ---
 
-## Page 7: Automation & Hooks
+## Page 7: Agent Framework
+
+### 🤖 Specialized AI Agents
+
+The framework now includes specialized agents for complex tasks:
+
+```yaml
+Agent Types:
+  rule-learning:
+    purpose: "Learns and documents new patterns from codebase"
+    triggers: ["analyze", "learn", "document"]
+    capabilities: ["pattern recognition", "rule generation"]
+    
+  frontend-validation:
+    purpose: "Comprehensive frontend testing and validation"
+    triggers: ["test", "validate", "frontend"]
+    capabilities: ["visual testing", "accessibility", "performance"]
+    
+  visual-regression:
+    purpose: "Visual regression testing for UI components"
+    triggers: ["visual", "regression", "ui"]
+    capabilities: ["screenshot comparison", "diff analysis"]
+```
+
+### Agent Workflow Integration
+
+```
+Complex Task Detected
+        ↓
+┌─────────────────┐
+│ Agent Selection │
+│ Based on Task   │
+│ Complexity      │
+└─────────────────┘
+        ↓
+┌─────────────────┐
+│ Specialized     │
+│ Agent Execution │
+│ with Context    │
+└─────────────────┘
+        ↓
+┌─────────────────┐
+│ Results         │
+│ Integration     │
+│ Back to Main    │
+└─────────────────┘
+```
+
+### Agent-Enhanced Testing
+
+**Frontend Validation Agent:**
+```yaml
+Capabilities:
+  - Visual regression testing
+  - Accessibility compliance (WCAG 2.1)
+  - Performance benchmarking
+  - Cross-browser compatibility
+  - Mobile responsiveness
+  - SEO optimization checks
+
+Automated Workflows:
+  - Pre-commit visual testing
+  - Accessibility audit reports
+  - Performance regression alerts
+  - Browser compatibility matrix
+```
+
+**Rule Learning Agent:**
+```yaml
+Capabilities:
+  - Codebase pattern analysis
+  - Custom rule generation
+  - Best practice documentation
+  - Anti-pattern detection
+  - Style guide enforcement
+
+Learning Process:
+  1. Analyze existing code patterns
+  2. Identify common structures
+  3. Generate custom rules
+  4. Validate with team feedback
+  5. Auto-update rule base
+```
+
+---
+
+## Page 8: Automation & Hooks
 
 ### Hook Integration Points
 
@@ -451,7 +541,7 @@ Session End Detected
 
 ---
 
-## Page 8: Dynamic Rule Loading
+## Page 9: Dynamic Rule Loading
 
 ### Keyword-Based Loading System
 
@@ -503,7 +593,7 @@ After Optimization:
 
 ---
 
-## Page 9: Context Management
+## Page 10: Context Management
 
 ### Context Window Optimization
 
@@ -565,7 +655,7 @@ Context Budget: 70% per task
 
 ---
 
-## Page 10: Quality Gates & Compliance
+## Page 11: Quality Gates & Compliance
 
 ### 5-Stage Quality Gate System
 
@@ -626,7 +716,7 @@ Error Detected: Test Failure
 
 ---
 
-## Page 11: Performance & Metrics
+## Page 12: Performance & Metrics
 
 ### System Performance Metrics
 
@@ -685,7 +775,7 @@ Quality Metrics:
 
 ---
 
-## Page 12: Implementation Guide
+## Page 13: Implementation Guide
 
 ### Complete Setup Checklist
 
