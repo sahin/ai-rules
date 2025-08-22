@@ -13,41 +13,38 @@
 ```markdown
 ## Plan: [Brief description]
 
-**📡 Hook Status:**
-- Rules auto-loaded: [X rules based on keywords: API, testing, etc.] OR [No keywords detected - using foundation rules only]
-- Smart testing: [Enabled - will run after file changes]
-- Auto-commit: [Enabled - will commit at session end]
+**📡 System Status:**
+- Rules loaded: [X rules based on keywords] OR [Foundation rules only]
+- Automated testing: Enabled
+- Auto-commit: Will trigger at session end
 
-**🪝 Hook Execution Timeline:**
+### Implementation Steps:
+
+1. **[Action Name]**: [What you'll do]
+   - File: `path/to/file.ext`
+   - Changes: [Specific modifications]
+   - Reason: [Why this is needed]
+
+2. **[Action Name]**: [What you'll do]
+   - File: `path/to/file.ext`
+   - Changes: [Specific modifications]
+   - Reason: [Why this is needed]
+
+3. **Testing**: [How you'll verify]
+   - Commands to run
+   - Expected outcomes
+
+**Note:** Hooks will automatically handle testing and validation during implementation.
 ```
-[Pre-Plan]
-├─ UserPromptSubmit → Loads rules based on keywords
-└─ PreResponse → Validates plan format
 
-[During Implementation]
-├─ PreToolUse → Tracks each file modification
-├─ PostToolUse → Runs smart tests after edits
-└─ Stop → Auto-commits at session end
-```
+## DURING IMPLEMENTATION (NOT IN PLAN):
 
-1. **[Implementation Action]**: [Concrete action based on research]
-   - Specific file/component affected: [exact path, already verified to exist]
-   - What will change: [specific changes, already confirmed possible]
-   - Why this is needed: [clear reason based on research findings]
-   
-   **🪝 Hook Called:**
-   ```
-   PreToolUse → Validating edit permission ✅
-   PostToolUse → Running X tests... ✅ All passed
-   ```
+The following will happen automatically:
+- PreToolUse hook validates each edit
+- PostToolUse hook runs affected tests
+- Session end triggers auto-commit
 
-2. **[Next Implementation]**: [Another concrete action]
-   - Specific file/component affected: [exact path]
-   - What will change: [specific changes]
-   - Why this is needed: [clear reason]
-   
-   **🪝 Hook Called:**
-   ```
+These hook messages appear ONLY during actual work, not in the plan.
    PreToolUse → File tracked for commit ✅
    PostToolUse → 0 tests affected, skipping
    ```
