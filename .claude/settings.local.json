@@ -4,7 +4,8 @@
       "Bash(wc -l /Users/s/Code/sahin/ai-rules/.claude/rules/*.md)",
       "Bash(wc -l /Users/s/Code/sahin/ai-rules/.claude/commands/*.md)",
       "Bash(git add README.md claude.md .claude/rules/api-security-standards.md .claude/rules/coding-standards.md .claude/rules/database-standards.md .claude/rules/git-standards.md .claude/rules/project-standards.md .claude/rules/testing-requirements.md .claude/commands/ .claude/settings.json .claude/settings.local.json docs/)",
-      "Bash(git add -u)"
+      "Bash(git add -u)",
+      "Bash(git commit:*)"
     ]
   }
 }
